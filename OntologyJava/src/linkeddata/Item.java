@@ -33,11 +33,11 @@ public class Item extends Entity {
     public String toText() {
         String text = label;
         text += " described as " + description;
-        text += " covers " + coverage;
-        text += " date " + date;
-        text += " has subject " + subject.toText();
-        text += " of type " + type;
-        text += " of type " + mediaType;
+        //text += " covers " + coverage;
+        //text += " date " + date;
+        //text += " has subject " + subject.toText();
+        //text += " of type " + type;
+        //text += " of type " + mediaType;
         return text;
     }
 

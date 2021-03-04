@@ -1,7 +1,7 @@
-Tom Smedley has role Appearance*
-Roger King has role Appearance*
-Willie Jackson has role Appearance*
-Annabelle Lee has role Composer related to Popular music
-Carol Ball has role Appearance*
-Edward Flynn has role Appearance*
-George Christian has role Interviewee
+Tom Smedley
+Roger King
+Willie Jackson
+Annabelle Lee is related to Popular music
+Carol Ball
+Edward Flynn
+George Christian

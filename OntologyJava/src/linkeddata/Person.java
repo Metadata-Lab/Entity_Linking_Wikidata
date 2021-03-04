@@ -34,14 +34,22 @@ public class Person extends Entity {
 
     public String toText() {
         String text = label;
-        for (String role : roles) {
-            text += " has role " + role;
+        Collection collection = relatedCollection();
+
+        if (collection != null) {
+            if (collection.getLabel().contains("Belfer")) {
+                for (String role : roles) {
+                    text += " has role " + role;
+                }
+            }
         }
         for (Entity rel : related) {
-            if (rel != null && rel.getType().equals("Subject")) text += " related to " + rel.toText();
+            if (rel != null && rel.getType().equals("Subject")) text += " is related to " + rel.toText();
+            else if (rel != null && collection.getLabel().contains("Koppel")) text += " is related to " + rel.toText();
         }
-        Collection collection = relatedCollection();
-        if (collection != null) text += " is part of " + collection.toText();
+        //if (collection != null) text += " is part of " + collection.getLabel();
+
+
         return text;
     }
 
@@ -52,4 +60,6 @@ public class Person extends Entity {
         }
         return null;
     }
+
+
 }

@@ -139,17 +139,17 @@ public class Ontology {
 
         Map<String, Set<Person>> collection_sets = sortPeopleByCollection();
 
-        writePersonSet("becker_people.txt", collection_sets.get("becker"));
-        System.out.println("Successfully wrote Becker.");
+        //writePersonSet("becker_people.txt", collection_sets.get("becker"));
+        //System.out.println("Successfully wrote Becker.");
 
-        writePersonSet("belfer_people.txt", collection_sets.get("belfer"));
-        System.out.println("Successfully wrote Belfer.");
+        //writePersonSet("belfer_people.txt", collection_sets.get("belfer"));
+        //System.out.println("Successfully wrote Belfer.");
 
         writePersonSet("koppel_people.txt", collection_sets.get("koppel"));
         System.out.println("Successfully wrote Koppel.");
 
-        writePersonSet("no_match_people.txt", collection_sets.get("none"));
-        System.out.println("Successfully wrote No Match.");
+        //writePersonSet("no_match_people.txt", collection_sets.get("none"));
+        //System.out.println("Successfully wrote No Match.");
 
     }
 
